@@ -99,3 +99,36 @@ nav {
   border-radius: 12px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
+/*  section-2 */
+.section-2 {
+  background-color: hsl(238, 22%, 44%);
+  padding: 48px;
+  display: flex;
+  justify-content: space-around;
+}
+.text-reg-s-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 50%;
+}
+
+.email-box input {
+  padding: 12px 64px;
+  font-size: 12px;
+  margin-bottom: 12px;
+  display: block;
+}
+.email-box button {
+  padding: 11px 36px;
+  border-radius: 0px;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+.box-4 {
+  display: flex;
+  gap: 16px;
+  height: 32px;
+}
