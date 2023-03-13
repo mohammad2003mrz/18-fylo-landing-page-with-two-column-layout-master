@@ -132,3 +132,129 @@ a {
   gap: 16px;
   height: 32px;
 }
+/*  footer */
+.box-footer {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+.nav-btn a {
+  color: #333;
+}
+#email {
+  padding: 0 80px;
+}
+#email-box {
+  display: flex;
+  gap: 16px;
+}
+#btn-email {
+  font-size: 12px;
+  height: 48px;
+  width: 190px;
+  border: none;
+  display: inline-block;
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#btn-email:is(:hover, :active) {
+  background-color: hsl(224, 100%, 70%);
+  color: #fff;
+}
+.btn-s-1:is(:link, :visited) {
+  color: hsl(170, 45%, 43%);
+  transition: all 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+.btn-s-1-box {
+  display: flex;
+  gap: 6px;
+  position: relative;
+}
+.btn-s-1:is(:hover, :active) {
+  color: hsl(170, 42%, 55%);
+}
+.btn-s-1-box a::after {
+  content: "";
+  height: 2px;
+  width: 0px;
+  background-color: hsl(170, 42%, 55%);
+  position: absolute;
+  top: 110%;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+.btn-s-1-box:hover a::after {
+  width: 152px;
+}
+.btn-email {
+  font-size: 12px;
+  height: 42px;
+  width: 190px;
+  border: none;
+  display: inline-block;
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-email:is(:hover, :active) {
+  background-color: hsl(224, 100%, 70%);
+  color: #fff;
+}
+.section-2 {
+  color: #fff;
+}
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+footer {
+  color: #fff;
+  background-color: hsl(243, 87%, 12%);
+  padding: 96px 256px 96px 0;
+  position: relative;
+}
+.f-f {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.box-2 ul,
+.box-3 ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.box-2 ul li a,
+.box-3 ul li a {
+  transition: all 0.3s ease-in-out;
+}
+.box-2 ul li a:is(:link, :visited),
+.box-3 ul li a:is(:link, :visited) {
+  color: #fff;
+}
+.box-2 ul li a:is(:hover, :active),
+.box-3 ul li a:is(:hover, :active) {
+  color: hsl(238, 22%, 44%);
+}
+.icon-s {
+  transition: all 0.3s ease-in-out;
+  fill: #fff;
+}
+
+.icon-s:hover {
+  fill: hsl(224, 93%, 58%);
+}
+.logo-footer {
+  height: 32px;
+  position: absolute;
+  top: 16%;
+  left: 7%;
+}
