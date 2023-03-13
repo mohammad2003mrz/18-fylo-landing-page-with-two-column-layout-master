@@ -3,7 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  /*  font-size */
+  --size-6: 0.6rem;
+  --size-11: 1.1rem;
+  --size-16: 1.6rem;
+  --size-24: 2.4rem;
+  --size-32: 3.2rem;
+  --size-18: 1.8rem;
+  --size-96: 9.6rem;
+  --size-64: 6.4rem;
+  --size-14: 1.4rem;
+  --size-12: 1.2rem;
+  --size-42: 4.2rem;
+  --size-48: 4.8rem;
+  --size-80: 8rem;
+  --size-190: 19rem;
+  --size-150: 15rem;
+  --size-256: 25.6rem;
+  --size-10: 10px;
+  --size-128: 12.8rem;
+  --size-175: 17.5rem;
+  --size-240: 24rem;
+  --size-350: 35rem;
+  --size-400: 40rem;
+  --size-500: 50rem;
+  --size-512: 51.2rem;
+}
 /*   Gen  */
+html {
+  font-size: 10px;
+}
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -19,14 +49,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 36px;
+  padding: var(--size-24) var(--size-32);
 }
 .logo {
   width: 60%;
 }
 .nav-btn {
   display: flex;
-  gap: 24px;
+  gap: var(--size-24);
 }
 .heading-primary {
   color: hsl(243, 87%, 12%);
@@ -42,14 +72,14 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  padding: 64px;
-  gap: 128px;
+  padding: var(--size-64);
+  gap: var(--size-128);
   width: 100%;
 }
 .h-text-box {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: var(--size-32);
 }
 .back-img {
   width: 80%;
@@ -60,24 +90,23 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  padding: 96px 64px;
+  padding: var(--size-96) var(--size-64);
 }
 .avatar-reg {
   display: flex;
-  gap: 12px;
+  gap: var(--size-12);
   align-items: center;
 }
 .text-s-1-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  gap: var(--size-24);
 }
-.img-box-s {
-}
+
 .section-box-1 {
   display: flex;
-  gap: 64px;
+  gap: var(--size-64);
   justify-content: center;
   align-items: center;
 }
@@ -91,37 +120,37 @@ nav {
 .reg-s-1 {
   display: flex;
   flex-direction: column;
-  gap: 22px;
-  height: 240px;
+  gap: var(--size-24);
+  height: var(--size-240);
   background-color: #fff;
-  width: 350px;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  width: var(--size-350);
+  padding: var(--size-24);
+  border-radius: var(--size-12);
+  box-shadow: 0 var(--size-12) var(--size-24) rgba(0, 0, 0, 0.2);
 }
 /*  section-2 */
 .section-2 {
   background-color: hsl(238, 22%, 44%);
-  padding: 48px;
+  padding: var(--size-48);
   display: flex;
   justify-content: space-around;
 }
 .text-reg-s-2 {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: var(--size-32);
   width: 50%;
 }
 
 .email-box input {
-  padding: 12px 64px;
-  font-size: 12px;
-  margin-bottom: 12px;
+  padding: var(--size-12) var(--size-64);
+  font-size: var(--size-12);
+  margin-bottom: var(--size-12);
   display: block;
 }
 .email-box button {
-  padding: 11px 36px;
-  border-radius: 0px;
+  padding: var(--size-11) var(--size-36);
+  border-radius: 0;
   border: none;
 }
 a {
@@ -129,30 +158,30 @@ a {
 }
 .box-4 {
   display: flex;
-  gap: 16px;
-  height: 32px;
+  gap: var(--size-16);
+  height: var(--size-32);
 }
 /*  footer & gen */
 .box-footer {
   font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;
-  gap: 150px;
+  gap: var(--size-150);
 }
 .nav-btn a {
   color: #333;
 }
 #email {
-  padding: 0 80px;
+  padding: 0 var(--size-80);
 }
 #email-box {
   display: flex;
-  gap: 16px;
+  gap: var(--size-16);
 }
 #btn-email {
-  font-size: 12px;
-  height: 48px;
-  width: 190px;
+  font-size: var(--size-12);
+  height: var(--size-48);
+  width: var(--size-190);
   border: none;
   display: inline-block;
   background-color: hsl(224, 93%, 58%);
@@ -172,7 +201,7 @@ a {
 }
 .btn-s-1-box {
   display: flex;
-  gap: 6px;
+  gap: var(--size-6);
   position: relative;
 }
 .btn-s-1:is(:hover, :active) {
@@ -189,12 +218,12 @@ a {
   transition: all 0.3s ease-in-out;
 }
 .btn-s-1-box:hover a::after {
-  width: 152px;
+  width: var(--size-150);
 }
 .btn-email {
-  font-size: 12px;
-  height: 42px;
-  width: 190px;
+  font-size: var(--size-12);
+  height: var(--size-42);
+  width: var(--size-190);
   border: none;
   display: inline-block;
   background-color: hsl(224, 93%, 58%);
@@ -217,12 +246,12 @@ a {
 footer {
   color: #fff;
   background-color: hsl(243, 87%, 12%);
-  padding: 96px 256px 96px 0;
+  padding: var(--size-96) var(--size-256) var(--size-96) 0;
   position: relative;
 }
 .f-f {
   display: flex;
-  gap: 12px;
+  gap: var(--size-12);
   align-items: center;
 }
 .box-2 ul,
@@ -253,7 +282,7 @@ footer {
   fill: hsl(224, 93%, 58%);
 }
 .logo-footer {
-  height: 32px;
+  height: var(--size-12);
   position: absolute;
   top: 16%;
   left: 7%;
