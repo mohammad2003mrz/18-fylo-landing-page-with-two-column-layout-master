@@ -101,6 +101,9 @@ nav {
   gap: 12px;
   align-items: center;
 }
+.text-reg {
+  font-size: 8px;
+}
 .text-s-1-box {
   display: flex;
   flex-direction: column;
