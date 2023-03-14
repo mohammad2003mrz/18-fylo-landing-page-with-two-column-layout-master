@@ -290,8 +290,9 @@ footer {
   fill: hsl(224, 93%, 58%);
 }
 .logo-footer {
-  height: 32px;
+  height: 48px;
+  margin-bottom: 12px;
   position: absolute;
-  top: 16%;
+  top: 10%;
   left: 7%;
 }
