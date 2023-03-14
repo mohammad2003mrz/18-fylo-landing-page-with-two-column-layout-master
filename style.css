@@ -5,11 +5,16 @@
 }
 :root {
   /*  font-size */
+
+  --size-2: 0.2rem;
   --size-6: 0.6rem;
+  --size-8: 0.8rem;
   --size-11: 1.1rem;
   --size-16: 1.6rem;
+  --size-22: 2.2rem;
   --size-24: 2.4rem;
   --size-32: 3.2rem;
+  --size-36: 3.6rem;
   --size-18: 1.8rem;
   --size-96: 9.6rem;
   --size-64: 6.4rem;
@@ -20,6 +25,7 @@
   --size-80: 8rem;
   --size-190: 19rem;
   --size-150: 15rem;
+  --size-152: 15.2rem;
   --size-256: 25.6rem;
   --size-10: 10px;
   --size-128: 12.8rem;
@@ -31,9 +37,7 @@
   --size-512: 51.2rem;
 }
 /*   Gen  */
-html {
-  font-size: 10px;
-}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -49,14 +53,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--size-24) var(--size-32);
+  padding: 24px 36px;
 }
 .logo {
   width: 60%;
 }
 .nav-btn {
   display: flex;
-  gap: var(--size-24);
+  gap: 24px;
 }
 .heading-primary {
   color: hsl(243, 87%, 12%);
@@ -72,14 +76,14 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  padding: var(--size-64);
-  gap: var(--size-128);
+  padding: 64px;
+  gap: 128px;
   width: 100%;
 }
 .h-text-box {
   display: flex;
   flex-direction: column;
-  gap: var(--size-32);
+  gap: 32px;
 }
 .back-img {
   width: 80%;
@@ -90,23 +94,24 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  padding: var(--size-96) var(--size-64);
+  padding: 96px 64px;
 }
 .avatar-reg {
   display: flex;
-  gap: var(--size-12);
+  gap: 12px;
   align-items: center;
 }
 .text-s-1-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--size-24);
+  gap: 24px;
 }
-
+.img-box-s {
+}
 .section-box-1 {
   display: flex;
-  gap: var(--size-64);
+  gap: 64px;
   justify-content: center;
   align-items: center;
 }
@@ -120,37 +125,37 @@ nav {
 .reg-s-1 {
   display: flex;
   flex-direction: column;
-  gap: var(--size-24);
-  height: var(--size-240);
+  gap: 22px;
+  height: 240px;
   background-color: #fff;
-  width: var(--size-350);
-  padding: var(--size-24);
-  border-radius: var(--size-12);
-  box-shadow: 0 var(--size-12) var(--size-24) rgba(0, 0, 0, 0.2);
+  width: 350px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 /*  section-2 */
 .section-2 {
   background-color: hsl(238, 22%, 44%);
-  padding: var(--size-48);
+  padding: 48px;
   display: flex;
   justify-content: space-around;
 }
 .text-reg-s-2 {
   display: flex;
   flex-direction: column;
-  gap: var(--size-32);
+  gap: 32px;
   width: 50%;
 }
 
 .email-box input {
-  padding: var(--size-12) var(--size-64);
-  font-size: var(--size-12);
-  margin-bottom: var(--size-12);
+  padding: 12px 64px;
+  font-size: 12px;
+  margin-bottom: 12px;
   display: block;
 }
 .email-box button {
-  padding: var(--size-11) var(--size-36);
-  border-radius: 0;
+  padding: 11px 36px;
+  border-radius: 0px;
   border: none;
 }
 a {
@@ -158,30 +163,30 @@ a {
 }
 .box-4 {
   display: flex;
-  gap: var(--size-16);
-  height: var(--size-32);
+  gap: 16px;
+  height: 32px;
 }
 /*  footer & gen */
 .box-footer {
   font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;
-  gap: var(--size-150);
+  gap: 150px;
 }
 .nav-btn a {
   color: #333;
 }
 #email {
-  padding: 0 var(--size-80);
+  padding: 0 80px;
 }
 #email-box {
   display: flex;
-  gap: var(--size-16);
+  gap: 16px;
 }
 #btn-email {
-  font-size: var(--size-12);
-  height: var(--size-48);
-  width: var(--size-190);
+  font-size: 12px;
+  height: 48px;
+  width: 190px;
   border: none;
   display: inline-block;
   background-color: hsl(224, 93%, 58%);
@@ -201,7 +206,7 @@ a {
 }
 .btn-s-1-box {
   display: flex;
-  gap: var(--size-6);
+  gap: 6px;
   position: relative;
 }
 .btn-s-1:is(:hover, :active) {
@@ -218,12 +223,12 @@ a {
   transition: all 0.3s ease-in-out;
 }
 .btn-s-1-box:hover a::after {
-  width: var(--size-150);
+  width: 152px;
 }
 .btn-email {
-  font-size: var(--size-12);
-  height: var(--size-42);
-  width: var(--size-190);
+  font-size: 12px;
+  height: 42px;
+  width: 190px;
   border: none;
   display: inline-block;
   background-color: hsl(224, 93%, 58%);
@@ -246,12 +251,12 @@ a {
 footer {
   color: #fff;
   background-color: hsl(243, 87%, 12%);
-  padding: var(--size-96) var(--size-256) var(--size-96) 0;
+  padding: 96px 256px 96px 0;
   position: relative;
 }
 .f-f {
   display: flex;
-  gap: var(--size-12);
+  gap: 12px;
   align-items: center;
 }
 .box-2 ul,
@@ -282,7 +287,7 @@ footer {
   fill: hsl(224, 93%, 58%);
 }
 .logo-footer {
-  height: var(--size-12);
+  height: 32px;
   position: absolute;
   top: 16%;
   left: 7%;
